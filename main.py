@@ -26,10 +26,10 @@ while rodando:
         if event.type == pygame.QUIT:
             rodando = False
 
-        screen.blit(bg, (0,0))
+    screen.blit(bg, (0,0))
 
     relativo_x = x % bg.get_rect().width
-    screen.blit(bg, (relativo_x, - bg.get_rect().width, 0)) 
+    screen.blit(bg, (relativo_x - bg.get_rect().width, 0)) 
 
     if relativo_x < 1280:
         screen.blit(bg, (relativo_x, 0))
